@@ -25,6 +25,8 @@
                 this.setSlotAttr();
             }
             this.dispatch('DragWrap', 'putChild', this.$el)
+        //    this.$el 是这个当前组件实例对应的真实Dom
+        //    触发DragWrap这个组件的putChild方法，参数是当前组件的真实Dom
         },
         methods: {
             setSlotAttr() {

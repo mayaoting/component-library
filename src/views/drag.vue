@@ -2,10 +2,10 @@
     <DragWrap class="wrap" :data="list" @watchData="watchData">
         <DragItem class="item" v-for="(item, index) in list" :key="index">
             <div>{{item}}</div>
-            <div>{{item}}</div>
-            <template #drag>
-                <div>拖拽Dom</div>
-            </template>
+<!--            <div>{{item}}</div>-->
+<!--            <template #drag>-->
+<!--                <div>拖拽Dom</div>-->
+<!--            </template>-->
         </DragItem>
     </DragWrap>
 </template>
