@@ -2,8 +2,8 @@
     <Magnifier
             style="padding: 50px; margin: 50px;"
             :boxSize="400"
-            :minImgUrl="require('./img/min.jpg')"
-            :maxImgUrl="require('./img/max.jpg')"
+            :minImgUrl="require('../assets/min1.jpg')"
+            :maxImgUrl="require('../assets/max1.jpg')"
     ></Magnifier>
 </template>
 

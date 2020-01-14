@@ -68,7 +68,7 @@
                 this.maxImg = this.$refs.img;
                 this.smallWidth = this.getDomAttr(this.small,'width');
                 this.smallHeight = this.getDomAttr(this.small,'height');
-                this.maxBox.style.width = this.boxSize + 'px';
+                this.maxBox.style.width = this.boxSize / 1.5 + 'px';
                 this.maxBox.style.height = this.boxSize + 'px';
             },
             getDomAttr(el,attr) {
@@ -82,8 +82,8 @@
                 const mask = this.$refs.mask;
                 const maxImgWidth = this.$refs.img.width;
                 const minBoxWidth = this.smallWidth;
-                mask.style.width = minBoxWidth * (minBoxWidth / maxImgWidth) + "px";
-                mask.style.height = minBoxWidth * (minBoxWidth / maxImgWidth) + "px";
+                mask.style.width = minBoxWidth * (minBoxWidth / maxImgWidth) / 2 + "px";
+                mask.style.height = minBoxWidth * (minBoxWidth / maxImgWidth) / 2 + "px";
                 const leftPosition = this.wrap.getBoundingClientRect().left;
                 const topPosition = this.wrap.getBoundingClientRect().top;
                 const paddingLeft = this.getDomAttr(this.wrap,'padding-left');
@@ -121,7 +121,7 @@
                     topPosition +
                     this.wrap.clientTop -
                     this.maxBox.clientTop +
-                    padddingTop +
+                    paddingTop +
                     this.small.clientTop +
                     "px";
                 if (left < paddingLeft) {
@@ -132,20 +132,20 @@
                 ) {
                     left = this.small.offsetWidth - this.mask.offsetWidth + paddingLeft;
                 }
-                if (top < padddingTop) {
-                    top = padddingTop;
+                if (top < paddingTop) {
+                    top = paddingTop;
                 } else if (
                     top >
-                    this.small.offsetHeight - this.mask.offsetHeight + padddingTop
+                    this.small.offsetHeight - this.mask.offsetHeight + paddingTop
                 ) {
-                    top = this.small.offsetHeight - this.mask.offsetHeight + padddingTop;
+                    top = this.small.offsetHeight - this.mask.offsetHeight + paddingTop;
                 }
                 this.mask.style.left = left + "px";
                 this.mask.style.top = top + "px";
                 const pX =
                     (left - paddingLeft) / (this.smallWidth - this.mask.offsetWidth);
                 const pY =
-                    (top - padddingTop) / (this.smallHeight - this.mask.offsetHeight);
+                    (top - paddingTop) / (this.smallHeight - this.mask.offsetHeight);
                 this.maxImg.style.left =
                     -pX * (this.maxImg.width - this.maxBox.offsetWidth) + "px";
                 this.maxImg.style.top =
@@ -179,6 +179,7 @@
             border: 1px solid #ccc;
             overflow: hidden;
             background: #fff;
+            margin-left: 100px;
             .img {
                 position: absolute;
             }

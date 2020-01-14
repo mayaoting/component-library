@@ -28,6 +28,11 @@ const routes = [
     name: 'drag',
     component:() => import('../views/drag.vue')
   },
+  {
+    path: '/magnifier',
+    name: 'magnifier',
+    component:() => import('../views/magnifier.vue')
+  },
 
 ]
 
