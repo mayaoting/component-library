@@ -33,6 +33,11 @@ const routes = [
     name: 'magnifier',
     component:() => import('../views/magnifier.vue')
   },
+  {
+    path: '/imgLabel',
+    name: 'imgLabel',
+    component:() => import('../views/imgLabel.vue')
+  },
 
 ]
 

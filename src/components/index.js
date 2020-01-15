@@ -1,11 +1,13 @@
 import DragWrap from "./DragWrap/src/DragWrap";
 import DragItem from "./DragItem/src/DragItem";
 import Magnifier from "./Magnifier/src/Magnifier";
+import ImgLabel from "./ImgLabel/src/ImgLabel";
 
 const components = [
     DragWrap,
     DragItem,
-    Magnifier
+    Magnifier,
+    ImgLabel
 ]
 // const install = Vue => {
 //     if (install.installed) return;
@@ -18,5 +20,6 @@ const components = [
 export default {
     DragWrap,
     DragItem,
-    Magnifier
+    Magnifier,
+    ImgLabel
 }
