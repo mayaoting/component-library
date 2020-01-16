@@ -9,7 +9,6 @@
             @click="handleVoidClick"
             @contextmenu.prevent="handelContextmenu"
         />
-
         <div class="label-list" v-show="isHideLabels">
             <div class="label-item"
                 v-for="(item,index) in labels"

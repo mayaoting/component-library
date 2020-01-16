@@ -38,6 +38,11 @@ const routes = [
     name: 'imgLabel',
     component:() => import('../views/imgLabel.vue')
   },
+  {
+    path: '/slideCheck',
+    name: 'slideCheck',
+    component:() => import('../views/slideCheck.vue')
+  },
 
 ]
 
