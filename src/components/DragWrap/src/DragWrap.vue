@@ -48,7 +48,6 @@
                 const realDomOrder = [...this.$el.children].filter(child => {
                     child.classList.contains('drag_item');
                 })
-                debugger
                 this.getDataOrder(realDomOrder,this.children);
             },
             isPrevNode(from, to) {    // to 是否在 from 的前面

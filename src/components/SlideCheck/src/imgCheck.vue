@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-<!--        <input value="admin" readonly/>-->
-<!--        <input type="password" value="1234567890" readonly/>-->
+       <!-- <input value="admin" readonly/> -->
+       <!-- <input type="password" value="1234567890" readonly/> -->
         <div id="captcha"></div>
         <div id="msg"></div>
     </div>
@@ -15,7 +15,7 @@
             jigsaw.init({
                 el: document.getElementById('captcha'),
                 onSuccess: function() {
-                    document.getElementById('msg').innerHTML = '登录成功！'
+                    document.getElementById('msg').innerHTML = '验证成功！'
                 },
                 onFail: cleanMsg,
                 onRefresh: cleanMsg

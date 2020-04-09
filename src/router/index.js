@@ -43,6 +43,11 @@ const routes = [
     name: 'slideCheck',
     component:() => import('../views/slideCheck.vue')
   },
+  {
+    path: '/imgCheck',
+    name: 'imgCheck',
+    component:() => import('../views/imgCheck.vue')
+  },
 
 ]
 
