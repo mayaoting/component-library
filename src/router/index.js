@@ -48,6 +48,11 @@ const routes = [
     name: 'imgCheck',
     component:() => import('../views/imgCheck.vue')
   },
+  {
+    path: '/canvasParticle1',
+    name: 'canvasParticle1',
+    component:() => import('../components/CanvasParticle/src/CanvasParticle1.vue')
+  },
 
 ]
 
