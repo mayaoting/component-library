@@ -53,6 +53,11 @@ const routes = [
     name: 'canvasParticle1',
     component:() => import('../components/CanvasParticle/src/CanvasParticle1.vue')
   },
+  {
+    path:'/todolist',
+    name: 'todolist',
+    component:() => import('../components/TodoList/src/todoList.vue')
+  },
 
 ]
 

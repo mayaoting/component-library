@@ -8,6 +8,7 @@
         <router-link to="/slideCheck">slideCheck</router-link> <br>
         <router-link to="/imgCheck">imgCheck</router-link> <br>
         <router-link to="/canvasParticle1">canvasParticle1</router-link> <br>
+        <router-link to="/todolist">todoList</router-link>
 
 
     </div>
