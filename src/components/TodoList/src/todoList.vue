@@ -198,15 +198,15 @@ export default {
     position: absolute;
     width: 18px;
     height: 22px;
-    top: 0;
+    top: 0px;
     content: " ";
     color: #fff;
     display: inline-block;
     visibility: visible;
     padding: 0px 2px;
     border-radius: 50%;
-    background:#FFFFFF;
-    border:1px solid #DDDDDD;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
   }
   
   input[type=checkbox]:checked:after {
@@ -308,10 +308,10 @@ export default {
           font-size: 22px;
           border-bottom: 1px solid #ededed;
           label {
+            width: 70%;
             white-space: pre-line;
             word-break: break-all;
             padding: 15px 60px 15px 15px;
-            // margin-left: 45px;
             display: inline-block;
             line-height: 30px;
             transition: color 0.4s;
